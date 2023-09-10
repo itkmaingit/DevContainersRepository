@@ -1,0 +1,28 @@
+{
+  "name": "Go(API) Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "api",
+  "workspaceFolder": "/home/node/works",
+  "remoteUser": "node",
+  "shutdownAction": "none",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "oderwat.indent-rainbow",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "esbenp.prettier-vscode",
+        "patbenatar.advanced-new-file",
+        "christian-kohler.path-intellisense",
+        "ryu1kn.partial-diff",
+        "mosapride.zenkaku",
+        "golang.Go",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "codezombiech.gitignore",
+        "nmrmsys.vscode-sql-formatter-mod",
+        "humao.rest-client",
+        "dunstontc.vscode-go-syntax"
+      ]
+    }
+  }
+}

@@ -13,3 +13,5 @@ git clone -b cpp https://github.com/itkmaingit/DevContainersRepository.git
 ## Caution
 
 This repository includes .gitignore, but we don't add `.env` to .gitignore. So, you need to add `.env` for yourself.
+
+This project includes Next.js, so you have to execute `npx create-next-app@latest` in `frontend(next)` directory at local (because that uses volume trick.).

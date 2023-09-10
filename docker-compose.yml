@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: api(go)
+    ports:
+      - "8000:80"
+    volumes:
+      - ./api(go)/works:/home/node/works
+    tty: true
+    working_dir: "/home/node/works"
+
+  frontend:
+    build:
+      context: frontend(next)
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    volumes:
+      - ./frontend(next)/app:/home/node/app
+      - exception-volumes:/home/node/app/node_modules
+
+    working_dir: "/home/node/app"
+    tty: true
+
+volumes:
+  exception-volumes:
