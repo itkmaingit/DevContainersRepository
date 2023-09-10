@@ -1,5 +1,6 @@
 FROM node:18
 RUN apt update && \
+    apt upgrade -y && \
     apt install -y git build-essential cmake clang libssl-dev less man-db sudo
 ENV SHELL bash
 ARG USERNAME=node
