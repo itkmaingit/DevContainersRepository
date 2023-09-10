@@ -1,6 +1,8 @@
 #build stage
 FROM golang:1.20
-RUN apt update && apt install -y less man-db sudo
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y less man-db sudo
 ENV SHELL bash
 
 ARG USERNAME=node
