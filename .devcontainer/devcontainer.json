@@ -1,18 +1,17 @@
 {
-	"name": "CPP Container",
+	"name": "Terraform Container",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "cpp",
+	"service": "terraform",
 	"workspaceFolder": "/home/node/works",
 	"remoteUser": "node",
 	// If you want to install some extensions (for VSCode), you have to write down the extension ids here.
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"franneck94.c-cpp-runner",
-				"ms-vscode.cpptools",
 				"esbenp.prettier-vscode",
 				"mosapride.zenkaku",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"HashiCorp.terraform"
 			]
 		}
 	}
