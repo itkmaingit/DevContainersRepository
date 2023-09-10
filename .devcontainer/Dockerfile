@@ -1,5 +1,6 @@
 FROM rust:1.71.1-bullseye
 RUN apt update && \
+    apt upgrade -y && \
     apt -y install git sudo&& \
     apt clean && \
     rm -rf /var/lib/apt/lists/* && \
