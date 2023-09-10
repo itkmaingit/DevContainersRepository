@@ -1,5 +1,6 @@
 FROM minizinc/minizinc:2.7.6
 RUN apt update && \
+    apt upgrade -y && \
     apt install -y make sudo
 ENV SHELL bash
 ARG USERNAME=node
