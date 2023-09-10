@@ -9,3 +9,7 @@ git clone -b cpp https://github.com/itkmaingit/DevContainersRepository.git
 ```
 
 . After that, simply run `Dev Containers: Reopen in Container` on VSCode to complete the setup of the development environment.
+
+## Caution
+
+This repository includes .gitignore, but we don't add `.env` to .gitignore. So, you need to add `.env` for yourself.
